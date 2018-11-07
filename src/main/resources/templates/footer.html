@@ -1,0 +1,28 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org" class="no-js fixed-layout">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Spring Boot 综合学习</title>
+</head>
+<body>
+<footer class="admin-content-footer" th:fragment="footFragment">
+    <hr>
+    <p class="am-padding-left">© 2014 AllMobilize, Inc. Licensed under MIT license.2018</p>
+
+    <a href="#" class="am-icon-btn am-icon-th-list am-show-sm-only admin-menu" data-am-offcanvas="{target: '#admin-offcanvas'}"></a>
+
+    <!--[if lt IE 9]>
+    <script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
+    <script th:src="@{/assets/js/amazeui.ie8polyfill.min.js}"></script>
+    <![endif]-->
+
+    <!--[if (gte IE 9)|!(IE)]><!-->
+    <script th:src="@{/assets/js/jquery.min.js}"></script>
+    <!--<![endif]-->
+    <script th:src="@{/assets/js/amazeui.min.js}"></script>
+    <script th:src="@{/assets/js/app.js}"></script>
+</footer>
+</body>
+</html>
